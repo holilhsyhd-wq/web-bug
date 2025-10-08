@@ -478,7 +478,7 @@
             
             if (isConnected) {
                 indicator.className = 'status-indicator connected';
-                text.textContent = 'Terhubung ke WhatsApp Web';
+                text.textContent = 'Terhubung ke sender';
                 text.style.color = '#90ee90';
                 
                 // Enable call buttons
@@ -552,7 +552,7 @@
                 userPhoneNumber = phone;
                 isConnected = true;
                 updateConnectionStatus();
-                updateStatus('✅ Berhasil terhubung ke WhatsApp Web!');
+                updateStatus('✅ Berhasil terhubung ke sender!');
             }, 3000);
         }
         
@@ -560,7 +560,7 @@
             if (isConnected) {
                 updateStatus(`✅ Terhubung sebagai ${userPhoneNumber}`);
             } else {
-                updateStatus('❌ Belum terhubung ke WhatsApp Web');
+                updateStatus('❌ Belum terhubung ke sender');
             }
         }
         
